@@ -1,0 +1,16 @@
+const string1 = "Simple, given a string of words, return the length of the shortest word(s)";
+const string2 = "turns out random test cases are easier than writing out basic ones";
+const string3 = "Let's travel abroad shall we";
+
+const arrayString = [];
+
+arrayString.push(string1,string2,string3);
+
+for(let i = 0; i < arrayString.length; i ++) {
+    const currString = arrayString[i];
+    const firstString = currString[0];
+    if(firstString < currString) {
+        console.log("Stringa più corta :", currString );
+    }
+}
+
