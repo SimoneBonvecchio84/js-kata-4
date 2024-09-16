@@ -3,14 +3,14 @@ const string2 = "turns out random test cases are easier than writing out basic o
 const string3 = "Let's travel abroad shall we";
 
 const arrayString = [];
-
 arrayString.push(string1,string2,string3);
 
 for(let i = 0; i < arrayString.length; i ++) {
-    const currString = arrayString[i];
-    const firstString = currString[0];
-    if(firstString < currString) {
-        console.log("Stringa più corta :", currString );
-    }
+   let min = arrayString[0];
+   let minElem = arrayString[i] < min;
+   console.log(minElem);
+   if(arrayString[i] < min) {
+     min = arrayString[i]
+     console.log(min)
+   }
 }
-
